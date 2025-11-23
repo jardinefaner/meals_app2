@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color seedColor = Colors.red;
+const Color seedColor = Colors.indigo;
 
 class ColorSchemes {
   static final ColorScheme light = ColorScheme.fromSeed(

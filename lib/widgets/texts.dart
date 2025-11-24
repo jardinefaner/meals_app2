@@ -15,7 +15,7 @@ class Texts extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    final TextStyle? textStyle = switch ((style, size)) {
+    final TextStyle? baseStyle = switch ((style, size)) {
       (TypeStyle.display, TypeSize.small) => textTheme.displaySmall,
       (TypeStyle.display, TypeSize.medium) => textTheme.displayMedium,
       (TypeStyle.display, TypeSize.large) => textTheme.displayLarge,
@@ -37,6 +37,6 @@ class Texts extends StatelessWidget {
       (TypeStyle.label, TypeSize.large) => textTheme.labelLarge,
     };
 
-    return Text(text, style: textStyle);
+    return Text(text, style: baseStyle);
   }
 }

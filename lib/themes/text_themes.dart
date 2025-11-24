@@ -7,12 +7,12 @@ class TextThemes {
     final TextTheme headingTheme = GoogleFonts.merriweatherTextTheme(base);
 
     return headingTheme.copyWith(
+      headlineLarge: bodyTheme.headlineLarge,
+      headlineMedium: bodyTheme.headlineMedium,
+      headlineSmall: bodyTheme.headlineSmall,
       bodyLarge: bodyTheme.bodyLarge,
       bodyMedium: bodyTheme.bodyMedium,
       bodySmall: bodyTheme.bodySmall,
-      labelLarge: bodyTheme.labelLarge,
-      labelMedium: bodyTheme.labelMedium,
-      labelSmall: bodyTheme.labelSmall,
     );
   }
 
